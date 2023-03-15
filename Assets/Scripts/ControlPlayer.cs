@@ -15,7 +15,7 @@ public class ControlPlayer : MonoBehaviour
 	{
 		float verticalInput = Input.GetAxis("Vertical") + 2;
         float horizontalInput = Input.GetAxis("Horizontal");
-		//transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * forwardSpeed);
+		transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * forwardSpeed);
         transform.Rotate(Vector3.up * horizontalInput * Time.deltaTime * turnSpeed);
     }
 }

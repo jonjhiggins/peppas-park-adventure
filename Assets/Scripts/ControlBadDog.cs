@@ -6,6 +6,7 @@ public class ControlBadDog : MonoBehaviour
 {
 	private int speed = 1;
 	public GameObject player;
+    public ParticleSystem ballParticles;
     public Score score;
     private bool collided = false;
     private int scoreDecrement = 10;
@@ -23,12 +24,18 @@ public class ControlBadDog : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject == player)
+        if (collision.gameObject == player && !collided)
         {
+            ballParticles.Play();
             score.DecreaseScore(scoreDecrement);
-            Destroy(gameObject);
+            Invoke(nameof(DestroySelf), ballParticles.main.duration);
             collided = true;
         }
+    }
+
+    void DestroySelf()
+    {
+        Destroy(gameObject);
     }
 }
 

@@ -5,14 +5,16 @@ public class BallBehaviours : MonoBehaviour
 
     public GameObject player;
     public ParticleSystem ballParticles;
-    public Score score;
+    public Score score; 
     private float speed;
+    private AudioSource audioSource;
     private int scoreIncrement = 10;
     private bool collided = false;
 
     void Start()
     {
         speed = Random.Range(0.5f, 5f);
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -28,6 +30,7 @@ public class BallBehaviours : MonoBehaviour
     {
         if (collision.gameObject == player && !collided)
         {
+            audioSource.Play();
             ballParticles.Play();
             score.IncreaseScore(scoreIncrement);
             Invoke(nameof(DestroySelf), ballParticles.main.duration);
