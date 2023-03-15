@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BallBehaviours : MonoBehaviour
 {
 
     public GameObject player;
+    public ParticleSystem ballParticles;
     public Score score;
     private float speed;
     private int scoreIncrement = 10;
@@ -27,11 +26,17 @@ public class BallBehaviours : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject == player)
+        if (collision.gameObject == player && !collided)
         {
+            ballParticles.Play();
             score.IncreaseScore(scoreIncrement);
-            Destroy(gameObject);
+            Invoke(nameof(DestroySelf), ballParticles.main.duration);
             collided = true;
         }
+    }
+
+    void DestroySelf()
+    {
+        Destroy(gameObject);
     }
 }
