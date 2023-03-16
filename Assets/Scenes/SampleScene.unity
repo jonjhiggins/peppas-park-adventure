@@ -509,7 +509,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1728044277}
-  ballParticles: {fileID: 505671058}
+  dogParticles: {fileID: 505671058}
+  dogImpact: {fileID: 8300000, guid: c67b52fed18c24fc8b9f9e57b6691ee8, type: 3}
   score: {fileID: 1557252658}
 --- !u!82 &146140246
 AudioSource:
@@ -911,7 +912,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1728044277}
-  ballParticles: {fileID: 1211601879}
+  dogParticles: {fileID: 1211601879}
+  dogImpact: {fileID: 8300000, guid: c67b52fed18c24fc8b9f9e57b6691ee8, type: 3}
   score: {fileID: 1557252658}
 --- !u!82 &295606762
 AudioSource:
@@ -6576,7 +6578,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1728044277}
-  ballParticles: {fileID: 1749125381}
+  dogParticles: {fileID: 1749125381}
+  dogImpact: {fileID: 8300000, guid: c67b52fed18c24fc8b9f9e57b6691ee8, type: 3}
   score: {fileID: 1557252658}
 --- !u!82 &872682690
 AudioSource:
@@ -26730,7 +26733,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1728044277}
-  ballParticles: {fileID: 1879123173}
+  dogParticles: {fileID: 1879123173}
+  dogImpact: {fileID: 8300000, guid: c67b52fed18c24fc8b9f9e57b6691ee8, type: 3}
   score: {fileID: 1557252658}
 --- !u!82 &1540421935
 AudioSource:

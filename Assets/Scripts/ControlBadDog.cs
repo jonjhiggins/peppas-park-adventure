@@ -6,12 +6,18 @@ public class ControlBadDog : MonoBehaviour
 {
 	private int speed = 1;
 	public GameObject player;
-    public ParticleSystem ballParticles;
+    public ParticleSystem dogParticles;
+    public AudioClip dogImpact;
     public Score score;
+    private AudioSource audioSource;
     private bool collided = false;
     private int scoreDecrement = 10;
 
-    // Update is called once per frame
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     void Update()
 	{
         if (collided)
@@ -26,9 +32,10 @@ public class ControlBadDog : MonoBehaviour
     {
         if (collision.gameObject == player && !collided)
         {
-            ballParticles.Play();
+            audioSource.PlayOneShot(dogImpact);
+            dogParticles.Play();
             score.DecreaseScore(scoreDecrement);
-            Invoke(nameof(DestroySelf), ballParticles.main.duration);
+            Invoke(nameof(DestroySelf), dogParticles.main.duration);
             collided = true;
         }
     }
