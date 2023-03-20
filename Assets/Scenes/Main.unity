@@ -156,10 +156,10 @@ RectTransform:
   m_Father: {fileID: 1444521538}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 141.5}
-  m_SizeDelta: {x: 743, y: 100}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -40}
+  m_SizeDelta: {x: 400, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &86792430
 MonoBehaviour:
@@ -271,7 +271,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 288009721470715035, guid: b53d78287f30f44fdaf471a8b93c72a0, type: 2}
-  m_audioClip: {fileID: 8300000, guid: c67b52fed18c24fc8b9f9e57b6691ee8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9fe330231cc2d4a01aa086aba00b09fd, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -510,7 +510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1728044277}
   dogParticles: {fileID: 505671058}
-  dogImpact: {fileID: 8300000, guid: c67b52fed18c24fc8b9f9e57b6691ee8, type: 3}
+  dogImpact: {fileID: 8300000, guid: b47b48a76950e41edbf228b853955b07, type: 3}
   score: {fileID: 1557252658}
 --- !u!82 &146140246
 AudioSource:
@@ -780,7 +780,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 288009721470715035, guid: b53d78287f30f44fdaf471a8b93c72a0, type: 2}
-  m_audioClip: {fileID: 8300000, guid: c67b52fed18c24fc8b9f9e57b6691ee8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9fe330231cc2d4a01aa086aba00b09fd, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -913,7 +913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1728044277}
   dogParticles: {fileID: 1211601879}
-  dogImpact: {fileID: 8300000, guid: c67b52fed18c24fc8b9f9e57b6691ee8, type: 3}
+  dogImpact: {fileID: 8300000, guid: b47b48a76950e41edbf228b853955b07, type: 3}
   score: {fileID: 1557252658}
 --- !u!82 &295606762
 AudioSource:
@@ -1364,7 +1364,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 505671055}
   serializedVersion: 8
-  lengthInSec: 0.3
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -1439,7 +1439,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.3
+      scalar: 0.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -6555,7 +6555,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 288009721470715035, guid: b53d78287f30f44fdaf471a8b93c72a0, type: 2}
-  m_audioClip: {fileID: 8300000, guid: c67b52fed18c24fc8b9f9e57b6691ee8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9fe330231cc2d4a01aa086aba00b09fd, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -6828,7 +6828,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1728044277}
   dogParticles: {fileID: 1749125381}
-  dogImpact: {fileID: 8300000, guid: c67b52fed18c24fc8b9f9e57b6691ee8, type: 3}
+  dogImpact: {fileID: 8300000, guid: b47b48a76950e41edbf228b853955b07, type: 3}
   score: {fileID: 1557252658}
 --- !u!82 &872682690
 AudioSource:
@@ -6991,8 +6991,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 131.5}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0, y: -45}
+  m_SizeDelta: {x: 200, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &900017279
 Canvas:
@@ -7070,7 +7070,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -7323,7 +7323,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020265375}
   serializedVersion: 8
-  lengthInSec: 0.3
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -7398,7 +7398,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.3
+      scalar: 0.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -12296,7 +12296,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211601876}
   serializedVersion: 8
-  lengthInSec: 0.3
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -12371,7 +12371,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.3
+      scalar: 0.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -17166,7 +17166,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1385708935}
   serializedVersion: 8
-  lengthInSec: 0.3
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -17241,7 +17241,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.3
+      scalar: 0.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -21956,10 +21956,10 @@ RectTransform:
   m_Father: {fileID: 772250485}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -640}
+  m_SizeDelta: {x: 1920, y: 1280}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1505007597
 PrefabInstance:
@@ -22143,7 +22143,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1533053451}
   serializedVersion: 8
-  lengthInSec: 0.3
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -22218,7 +22218,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.3
+      scalar: 0.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -27021,7 +27021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1728044277}
   dogParticles: {fileID: 1879123173}
-  dogImpact: {fileID: 8300000, guid: c67b52fed18c24fc8b9f9e57b6691ee8, type: 3}
+  dogImpact: {fileID: 8300000, guid: b47b48a76950e41edbf228b853955b07, type: 3}
   score: {fileID: 1557252658}
 --- !u!82 &1540421935
 AudioSource:
@@ -27421,7 +27421,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749125378}
   serializedVersion: 8
-  lengthInSec: 0.3
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -27496,7 +27496,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.3
+      scalar: 0.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -32291,7 +32291,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1879123170}
   serializedVersion: 8
-  lengthInSec: 0.3
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -32366,7 +32366,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.3
+      scalar: 0.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
