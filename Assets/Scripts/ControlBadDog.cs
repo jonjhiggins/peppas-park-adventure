@@ -12,6 +12,7 @@ public class ControlBadDog : MonoBehaviour
     private AudioSource audioSource;
     private bool collided = false;
     private int scoreDecrement = 10;
+    
 
     void Start()
     {
